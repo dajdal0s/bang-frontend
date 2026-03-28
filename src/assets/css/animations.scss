@@ -1,0 +1,23 @@
+.card-horizontal-enter-active, .card-horizontal-leave-active {
+  transition: 0.3s;
+}
+.card-horizontal-enter, .card-horizontal-leave-to {
+  opacity: 0;
+}
+
+.card-horizontal-leave-to {
+  transform: translateX(-2rem);
+}
+
+.card-horizontal-enter {
+  transform: translateX(2rem);
+}
+
+.card-vertical-enter-active, .card-vertical-leave-active {
+  transition: all 0.3s;
+}
+.card-vertical-enter, .card-vertical-leave-to {
+  opacity: 0;
+  flex-basis: 0;
+  flex-grow: 0;
+}
