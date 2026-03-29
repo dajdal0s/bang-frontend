@@ -14,7 +14,7 @@ export const getApiUrl = () => {
 }
 
 const instance = axios.create({
-  baseURL: `${hostname}${getApiUrl()}`,
+  baseURL: 'https://bang-backend.onrender.com',
   timeout: 10000,
   headers: {
     Authorization: `Bearer ${getToken()}`
