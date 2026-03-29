@@ -1,7 +1,6 @@
 import Ws from '@adonisjs/websocket-client';
 
 import { getToken } from "./localstorage";
-import { getApiUrl } from "./axios";
 
 export function getSocketProtocol () {
   return window.location.hostname === 'localhost' ? 'ws://' : 'wss://'
