@@ -11,7 +11,7 @@ export class SocketConnection {
   connect () {
     const token = getToken();
 
-    this.ws = Ws(`${getSocketProtocol()}${getApiUrl()}`)
+    this.ws = Ws('wss://bang-backend.onrender.com')
       .withApiToken(token)
       .connect();
 
