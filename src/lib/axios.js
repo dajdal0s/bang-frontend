@@ -7,7 +7,6 @@ function getHostname () {
   return window.location.hostname === 'localhost' ? 'http://' : 'https://'
 }
 
-const hostname = getHostname();
 
 export const getApiUrl = () => {
   return window.location.hostname === 'localhost' ? process.env.VUE_APP_API_URL_DEV : process.env.VUE_APP_API_URL_PROD
